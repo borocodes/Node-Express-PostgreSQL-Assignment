@@ -1,7 +1,7 @@
 const knex = require("../db/connection");
 
 function list() {
-  // your solution here
+  return knex("comments as c").select("c.comments")
 }
 
 function listCommenterCount() {
